@@ -73,6 +73,7 @@ rm -f %{buildroot}%{_libdir}/libidn.la
 %docs_package
 
 %files
+%license COPYING
 %{_libdir}/libidn.so.*
 %{_infodir}/libidn*
 %{_bindir}/idn
