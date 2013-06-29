@@ -7,6 +7,7 @@ Url:            http://www.gnu.org/software/libidn/
 Group:          System/Libraries
 Source0:        http://ftp.gnu.org/gnu/libidn/libidn-%{version}.tar.gz
 Source1:        baselibs.conf
+Source1001: 	libidn.manifest
 BuildRequires:  pkgconfig
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
@@ -45,6 +46,7 @@ IDNA is supported.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure --with-pic --disable-static --disable-gtk-doc
@@ -73,6 +75,7 @@ rm -f %{buildroot}%{_libdir}/libidn.la
 %docs_package
 
 %files
+%manifest %{name}.manifest
 %license COPYING
 %{_libdir}/libidn.so.*
 %{_infodir}/libidn*
@@ -81,6 +84,7 @@ rm -f %{buildroot}%{_libdir}/libidn.la
 %{_datadir}/emacs/site-lisp/punycode.el
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %{_libdir}/libidn.so
 %{_includedir}/*.h
