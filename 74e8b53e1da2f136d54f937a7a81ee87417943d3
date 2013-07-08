@@ -1,0 +1,8 @@
+Change-Id: I74e8b53e1da2f136d54f937a7a81ee87417943d3
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:39:34 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4890
+Project: platform/upstream/libidn
+Branch: refs/heads/tizen
