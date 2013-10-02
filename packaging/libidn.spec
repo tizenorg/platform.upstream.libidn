@@ -79,9 +79,6 @@ rm -f %{buildroot}%{_libdir}/libidn.la
 %license COPYING
 %{_libdir}/libidn.so.*
 %{_infodir}/libidn*
-%{_bindir}/idn
-%{_datadir}/emacs/site-lisp/idna.el
-%{_datadir}/emacs/site-lisp/punycode.el
 
 %files devel
 %manifest %{name}.manifest
@@ -89,5 +86,8 @@ rm -f %{buildroot}%{_libdir}/libidn.la
 %{_libdir}/libidn.so
 %{_includedir}/*.h
 %{_libdir}/pkgconfig/libidn.pc
+%{_datadir}/emacs/site-lisp/idna.el
+%{_datadir}/emacs/site-lisp/punycode.el
+%{_bindir}/idn
 
 %changelog
